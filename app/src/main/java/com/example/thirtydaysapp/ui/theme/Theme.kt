@@ -3,11 +3,7 @@ package com.example.thirtydaysapp.ui.theme
 import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
-import androidx.compose.material3.lightColorScheme
+import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.graphics.toArgb
@@ -16,15 +12,20 @@ import androidx.compose.ui.platform.LocalView
 import androidx.core.view.ViewCompat
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    background = Cyan900,
+    surface = Cyan700,
+    onSurface = White,
+    primary = Grey900,
+    onPrimary = White,
+    secondary = Grey100
 )
-
 private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+    background = Green100,
+    surface = Green50,
+    onSurface = Grey900,
+    primary = Grey50,
+    onPrimary = Grey900,
+    secondary = Grey700
 
     /* Other default colors to override
     background = Color(0xFFFFFBFE),
@@ -63,6 +64,7 @@ fun ThirtyDaysAppTheme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
-        content = content
+        content = content,
+
     )
 }

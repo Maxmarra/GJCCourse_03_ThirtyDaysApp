@@ -1,8 +1,13 @@
 <resources>
-    <string name="app_name">Thirty Days App</string>
+    <string name="app_name">30 дней</string>
 
 
     <string name="day_number">День %s</string>
+
+
+    <string name="additional">Не забывай - ты самый лучший на свете человек! Я тебя очень ценю и люблю!!!</string>
+
+
 
     <string name="affirmation1">Все супер, жизнь удалась!</string>
     <string name="affirmation2">Все супер, жизнь удалась!</string>
